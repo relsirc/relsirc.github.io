@@ -165,6 +165,17 @@ section{padding:96px 24px}
 .skill-card .tag-row{margin-top:0;padding-top:0}
 .skill-card .tag{background:var(--surface-card)}
 
+/* cape pillars */
+.cape-intro{font-size:16px;line-height:1.55;color:var(--text-body);margin:0 0 48px;max-width:68ch}
+.pillar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.pillar-card{background:var(--surface-canvas);border:1px solid var(--border-hairline);border-radius:var(--radius-lg);padding:var(--space-lg);display:flex;flex-direction:column;gap:var(--space-md)}
+.pillar-mono{font-family:var(--font-display);font-size:32px;font-weight:400;color:var(--color-primary);line-height:1}
+.pillar-card h3{font-size:16px;font-weight:500;line-height:1.4;color:var(--text-heading);margin:0}
+.pillar-question{font-size:14px;line-height:1.55;color:var(--text-body);margin:0}
+.pillar-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.pillar-list li{font-size:13px;line-height:1.5;color:var(--text-muted);display:flex;gap:8px}
+.pillar-list li .dash{color:var(--text-muted-soft,var(--text-muted))}
+
 /* service tiers */
 .tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:stretch}
 .tier-card{background:var(--surface-canvas);border:1px solid var(--border-hairline);border-radius:var(--radius-lg);padding:var(--space-xl);display:flex;flex-direction:column;gap:var(--space-md);box-shadow:none;transition:box-shadow var(--transition-base)}
@@ -414,6 +425,56 @@ section{padding:96px 24px}
   </div>
 </section>
 
+<section id="cape" style="background:var(--cream-100)">
+  <div class="wrap">
+    <div class="eyebrow">Methodology</div>
+    <h2 class="section-title">What is C.A.P.E.?</h2>
+    <p class="cape-intro">The AI era doesn't reward teams that write more code — it rewards teams that make better decisions, move faster, and keep quality high. C.A.P.E. is the framework behind every audit and engagement: four pillars, one read of your organization.</p>
+    <div class="pillar-grid">
+      <article class="pillar-card">
+        <span class="pillar-mono">C</span>
+        <h3>Culture &amp; Capability</h3>
+        <p class="pillar-question">Do your people have the mindset and skills to thrive in the AI era?</p>
+        <ul class="pillar-list">
+          <li><span class="dash">—</span>AI training workshops</li>
+          <li><span class="dash">—</span>AI coding guidelines</li>
+          <li><span class="dash">—</span>AI pair-programming workflows</li>
+        </ul>
+      </article>
+      <article class="pillar-card">
+        <span class="pillar-mono">A</span>
+        <h3>Architecture &amp; Automation</h3>
+        <p class="pillar-question">Are you using AI to move faster without creating tomorrow's technical debt?</p>
+        <ul class="pillar-list">
+          <li><span class="dash">—</span>AI coding standards</li>
+          <li><span class="dash">—</span>AI-assisted test generation</li>
+          <li><span class="dash">—</span>Architecture decision records</li>
+        </ul>
+      </article>
+      <article class="pillar-card">
+        <span class="pillar-mono">P</span>
+        <h3>Product &amp; Process</h3>
+        <p class="pillar-question">Are you building the right thing, at the right speed?</p>
+        <ul class="pillar-list">
+          <li><span class="dash">—</span>Smaller release cycles</li>
+          <li><span class="dash">—</span>Experiment-driven development</li>
+          <li><span class="dash">—</span>Faster feedback loops</li>
+        </ul>
+      </article>
+      <article class="pillar-card">
+        <span class="pillar-mono">E</span>
+        <h3>Experience &amp; Expansion</h3>
+        <p class="pillar-question">Is your speed turning into business results?</p>
+        <ul class="pillar-list">
+          <li><span class="dash">—</span>Better onboarding</li>
+          <li><span class="dash">—</span>Growth experiments</li>
+          <li><span class="dash">—</span>ASO optimization</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="services" style="background:var(--cream-100)">
   <div class="wrap">
     <div class="eyebrow">Services</div>
@@ -433,7 +494,7 @@ section{padding:96px 24px}
       <article class="tier-card featured">
         <span class="badge">Now booking AI Readiness Audits</span>
         <h3>C.A.P.E. Audit</h3>
-        <p>Culture &amp; Capability, Architecture &amp; Automation, Product &amp; Process, Experience &amp; Expansion — a two-week read of your engineering org and the AI opportunity inside it.</p>
+        <p>A two-week read of your engineering org across all four C.A.P.E. pillars, delivered as a scorecard and 90-day roadmap.</p>
         <ul class="tier-bullets">
           <li><span class="dash">—</span>C.A.P.E. scorecard across all 4 pillars</li>
           <li><span class="dash">—</span>Top risks + 30-day quick wins</li>
