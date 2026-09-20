@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free AI Coding Standards &amp; Prompt Pack — Crisler Chee</title>
+<meta name="description" content="A short, practical prompt pack and review checklist for teams using Claude, Cursor, or Codex — built from 10+ years shipping production mobile apps.">
+<meta name="author" content="Crisler Chee">
+<link rel="canonical" href="https://relsirc.github.io/ai-coding-standards.html">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#181715">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://relsirc.github.io/ai-coding-standards.html">
+<meta property="og:title" content="Free AI Coding Standards & Prompt Pack — Crisler Chee">
+<meta property="og:description" content="A short, practical prompt pack and review checklist for teams using Claude, Cursor, or Codex — built from 10+ years shipping production mobile apps.">
+<meta property="og:image" content="https://relsirc.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free AI Coding Standards & Prompt Pack — Crisler Chee">
+<meta name="twitter:description" content="A short, practical prompt pack and review checklist for teams using Claude, Cursor, or Codex — built from 10+ years shipping production mobile apps.">
+<meta name="twitter:image" content="https://relsirc.github.io/assets/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --coral-500:#cc785c;--coral-700:#a9583e;
+  --ink-900:#141413;--ink-800:#252523;--ink-700:#3d3d3a;--ink-500:#6c6a64;--ink-400:#8e8b82;
+  --cream-50:#faf9f5;--cream-100:#f5f0e8;--cream-200:#efe9de;--cream-300:#e8e0d2;--cream-line:#e6dfd8;
+  --night-900:#181715;--night-700:#252320;--night-ink-soft:#a09d96;
+  --white:#ffffff;
+
+  --color-primary:var(--coral-500);--color-primary-active:var(--coral-700);
+  --surface-canvas:var(--cream-50);--surface-card:var(--cream-200);
+  --surface-dark:var(--night-900);
+  --text-heading:var(--ink-900);--text-body:var(--ink-700);--text-muted:var(--ink-500);
+  --text-on-dark:var(--cream-50);--text-on-dark-soft:var(--night-ink-soft);--text-link:var(--coral-500);
+  --border-hairline:var(--cream-line);
+
+  --font-display:"Newsreader",Georgia,serif;
+  --font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+
+  --radius-md:8px;--radius-lg:12px;--radius-pill:9999px;
+  --space-xs:8px;--space-sm:12px;--space-md:16px;--space-lg:24px;--space-xl:32px;
+  --content-max:680px;--control-height:44px;
+  --focus-ring:0 0 0 3px rgba(204,120,92,0.15);
+  --transition-fast:120ms ease;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-canvas);font-family:var(--font-sans);color:var(--text-body)}
+a{color:var(--text-link);text-decoration:none}
+.wrap{max-width:var(--content-max);margin:0 auto;padding:0 24px}
+
+.site-header{padding:24px;display:flex;align-items:center;justify-content:center}
+.brand{font-family:var(--font-display);font-size:18px;letter-spacing:-0.3px;color:var(--text-heading)}
+
+section{padding:64px 24px}
+.section-title{font-family:var(--font-display);font-size:32px;font-weight:400;line-height:1.15;letter-spacing:-0.5px;color:var(--text-heading);margin:0 0 24px;text-align:center}
+
+.badge{font-family:var(--font-sans);font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;line-height:1.4;border-radius:var(--radius-pill);padding:4px 12px;display:inline-flex;align-items:center;background:var(--color-primary);color:var(--white)}
+
+.hero{text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+.hero h1{font-family:var(--font-display);font-size:48px;font-weight:400;line-height:1.1;letter-spacing:-1px;color:var(--text-heading);margin:0;max-width:16ch}
+.hero-desc{font-size:18px;line-height:1.55;color:var(--text-body);margin:0;max-width:48ch}
+
+.lead-form{display:flex;flex-direction:column;gap:12px;width:100%;max-width:400px;margin-top:8px}
+.lead-form input{font-family:var(--font-sans);font-size:16px;color:var(--text-heading);background:var(--white);border-radius:var(--radius-md);padding:12px 16px;width:100%;border:1px solid var(--border-hairline);outline:none;transition:border-color var(--transition-fast),box-shadow var(--transition-fast)}
+.lead-form input:focus{border-color:var(--color-primary);box-shadow:var(--focus-ring)}
+.btn{font-family:var(--font-sans);font-size:15px;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;height:var(--control-height);padding:0 24px;transition:filter var(--transition-fast);background:var(--color-primary);color:var(--white)}
+.btn:hover{filter:brightness(0.96)}
+.btn:disabled{opacity:0.6;cursor:not-allowed}
+.form-note{font-size:12px;color:var(--text-muted);margin:0}
+.form-status{font-size:15px;color:var(--text-heading);margin:0}
+.form-status.error{color:#c64545}
+
+.lead-bullets{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:20px;max-width:560px;margin:0 auto}
+.lead-bullets li{display:flex;gap:14px;font-size:16px;line-height:1.55;color:var(--text-body)}
+.lead-bullets .check{flex-shrink:0;width:24px;height:24px;border-radius:var(--radius-pill);background:var(--surface-card);color:var(--color-primary);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+
+.credibility{background:var(--surface-card);border-radius:var(--radius-lg);padding:var(--space-xl);max-width:560px;margin:0 auto;text-align:center}
+.credibility p{font-size:16px;line-height:1.55;color:var(--text-body);margin:0}
+.credibility strong{color:var(--text-heading)}
+
+.cta-section{background:var(--surface-dark);text-align:center}
+.cta-section .section-title{color:var(--text-on-dark)}
+.cta-section .hero-desc{color:var(--text-on-dark-soft)}
+.cta-section .lead-form input{border-color:transparent}
+
+.site-footer{padding:32px 24px;text-align:center;display:flex;flex-direction:column;gap:8px;align-items:center}
+.site-footer span{font-size:13px;color:var(--text-muted)}
+.site-footer a{font-size:13px}
+
+@media (max-width:600px){
+  .hero h1{font-size:36px}
+  .section-title{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">Crisler Chee</a>
+</header>
+
+<section id="top">
+  <div class="wrap hero">
+    <span class="badge">Free for engineering teams</span>
+    <h1>Ship AI-Generated Code You Can Actually Trust</h1>
+    <p class="hero-desc">A short, practical prompt pack and review checklist for teams using Claude, Cursor, or Codex — built from 10+ years shipping production mobile apps.</p>
+    <form class="lead-form" id="lead-form-top">
+      <input type="text" name="first_name" placeholder="Your name" required>
+      <input type="email" name="email_address" placeholder="you@company.com" required>
+      <button type="submit" class="btn">Get the Prompt Pack</button>
+      <p class="form-status" role="status" aria-live="polite" hidden></p>
+      <p class="form-note">No spam. Unsubscribe anytime.</p>
+    </form>
+  </div>
+</section>
+
+<section id="whats-inside">
+  <div class="wrap">
+    <h2 class="section-title">What's inside</h2>
+    <ul class="lead-bullets">
+      <li><span class="check">✓</span>An AI code-review checklist — catch what AI-generated code quietly gets wrong</li>
+      <li><span class="check">✓</span>Prompt templates for test generation, refactor planning, and PR review</li>
+      <li><span class="check">✓</span>Guidance on when AI output needs mandatory human review</li>
+      <li><span class="check">✓</span>A short onboarding prompt for bringing new hires up to speed with your codebase</li>
+      <li><span class="check">✓</span>Built from real production experience, not generic prompt-engineering tips</li>
+    </ul>
+  </div>
+</section>
+
+<section id="credibility" style="background:var(--cream-100)">
+  <div class="wrap">
+    <div class="credibility">
+      <p>From <strong>Crisler Chee</strong> — 10+ years shipping iOS/Android apps across payments, web3, and fintech, currently Frontend Lead at SU-PAY.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta-bottom" class="cta-section">
+  <div class="wrap hero">
+    <h2 class="section-title">Get the Prompt Pack</h2>
+    <p class="hero-desc">Drop your email below — the pack lands in your inbox.</p>
+    <form class="lead-form" id="lead-form-bottom">
+      <input type="text" name="first_name" placeholder="Your name" required>
+      <input type="email" name="email_address" placeholder="you@company.com" required>
+      <button type="submit" class="btn">Get the Prompt Pack</button>
+      <p class="form-status" role="status" aria-live="polite" hidden></p>
+      <p class="form-note" style="color:var(--text-on-dark-soft)">No spam. Unsubscribe anytime.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>© 2026 Crisler Chee · Built in Japan</span>
+  <a href="index.html">← Back to the main site</a>
+</footer>
+
+<script>
+(() => {
+  const FORM_ID = 'YOUR_CONVERTKIT_FORM_ID';
+  const API_KEY = 'YOUR_CONVERTKIT_API_KEY';
+
+  function wireForm(form) {
+    const status = form.querySelector('.form-status');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const data = new FormData(form);
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      status.hidden = true;
+      status.className = 'form-status';
+      try {
+        const res = await fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            api_key: API_KEY,
+            email: data.get('email_address'),
+            first_name: data.get('first_name')
+          })
+        });
+        const json = await res.json();
+        if (!json.subscription) throw new Error(json.message || 'Signup failed');
+        form.querySelectorAll('input, button').forEach(el => el.style.display = 'none');
+        status.textContent = "You're in — check your inbox for the pack.";
+        status.hidden = false;
+      } catch (err) {
+        status.textContent = 'Something went wrong — please try again in a moment.';
+        status.className = 'form-status error';
+        status.hidden = false;
+        btn.disabled = false;
+        btn.textContent = 'Get the Prompt Pack';
+      }
+    });
+  }
+
+  wireForm(document.getElementById('lead-form-top'));
+  wireForm(document.getElementById('lead-form-bottom'));
+})();
+</script>
+</body>
+</html>
