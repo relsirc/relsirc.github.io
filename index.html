@@ -40,7 +40,6 @@
     "@type": "Organization",
     "name": "SU-PAY"
   },
-  "email": "mailto:crislerchee@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tokyo",
@@ -523,7 +522,6 @@ section{padding:96px 24px}
     <div class="contact-copy">
       <h2>Let's talk about your app</h2>
       <p>Tell me what you're building and where it hurts. I read everything and reply within a couple of days.</p>
-      <a class="text-link" href="mailto:crislerchee@gmail.com">crislerchee@gmail.com</a>
     </div>
     <form class="contact-form" id="contact-form">
       <input type="hidden" name="access_key" value="118f7554-f07a-45bd-89af-7f024780dce9">
@@ -589,7 +587,7 @@ section{padding:96px 24px}
       status.textContent = "Thanks — I'll reply within a couple of days.";
       status.hidden = false;
     } catch (err) {
-      status.textContent = 'Something went wrong — please email me directly at crislerchee@gmail.com.';
+      status.textContent = 'Something went wrong — please try again in a moment.';
       status.className = 'form-status error';
       status.hidden = false;
       btn.disabled = false;
