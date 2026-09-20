@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Crisler Chee — Frontend Lead &amp; AI-Assisted Development Consultant</title>
-<meta name="description" content="Frontend Lead at SU-PAY and AI-assisted development consultant. 10+ years shipping iOS and Android apps across payments, web3, fintech and games. Based in Tokyo.">
+<title>Crisler Chee — AI Product &amp; Engineering Transformation Consultant</title>
+<meta name="description" content="AI Product & Engineering Transformation Consultant. 10+ years shipping iOS and Android apps across payments, web3, fintech and games — currently Frontend Lead at SU-PAY. Based in Tokyo.">
 <meta name="author" content="Crisler Chee">
 <link rel="canonical" href="https://relsirc.github.io/">
 
@@ -16,16 +16,16 @@
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://relsirc.github.io/">
-<meta property="og:title" content="Crisler Chee — Frontend Lead & AI-Assisted Development Consultant">
-<meta property="og:description" content="Frontend Lead at SU-PAY and AI-assisted development consultant. 10+ years shipping iOS and Android apps across payments, web3, fintech and games. Based in Tokyo.">
+<meta property="og:title" content="Crisler Chee — AI Product & Engineering Transformation Consultant">
+<meta property="og:description" content="AI Product & Engineering Transformation Consultant. 10+ years shipping iOS and Android apps across payments, web3, fintech and games — currently Frontend Lead at SU-PAY. Based in Tokyo.">
 <meta property="og:image" content="https://relsirc.github.io/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Crisler Chee — Frontend Lead & AI-Assisted Development Consultant">
-<meta name="twitter:description" content="Frontend Lead at SU-PAY and AI-assisted development consultant. 10+ years shipping iOS and Android apps across payments, web3, fintech and games. Based in Tokyo.">
+<meta name="twitter:title" content="Crisler Chee — AI Product & Engineering Transformation Consultant">
+<meta name="twitter:description" content="AI Product & Engineering Transformation Consultant. 10+ years shipping iOS and Android apps across payments, web3, fintech and games — currently Frontend Lead at SU-PAY. Based in Tokyo.">
 <meta name="twitter:image" content="https://relsirc.github.io/assets/og-image.png">
 
 <script type="application/ld+json">
@@ -35,7 +35,7 @@
   "name": "Crisler Chee",
   "url": "https://relsirc.github.io/",
   "image": "https://relsirc.github.io/assets/og-image.png",
-  "jobTitle": "Frontend Lead & AI-Assisted Development Consultant",
+  "jobTitle": "AI Product & Engineering Transformation Consultant",
   "worksFor": {
     "@type": "Organization",
     "name": "SU-PAY"
@@ -136,10 +136,16 @@ section{padding:96px 24px}
 .portrait-name{font-size:16px;font-weight:500;color:var(--text-heading)}
 .portrait-role{font-size:14px;color:var(--text-muted)}
 
+.stat-strip{display:flex;flex-wrap:wrap;gap:32px;margin-top:64px;padding-top:32px;border-top:1px solid var(--border-hairline)}
+.stat-item{display:flex;flex-direction:column;gap:4px}
+.stat-value{font-family:var(--font-display);font-size:28px;font-weight:400;color:var(--text-heading)}
+.stat-label{font-size:13px;color:var(--text-muted)}
+
 /* case study cards */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .case-card{background:var(--surface-card);border-radius:var(--radius-lg);padding:var(--space-xl);display:flex;flex-direction:column;gap:var(--space-md);box-shadow:none;transform:none;transition:transform var(--transition-base),box-shadow var(--transition-base)}
 .case-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px)}
+.case-card--static:hover{box-shadow:none;transform:none}
 .case-status{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)}
 .case-status .dot{width:6px;height:6px;border-radius:9999px;background:var(--green-500)}
 .case-card h3{font-family:var(--font-sans);font-size:18px;font-weight:500;line-height:1.4;color:var(--text-heading);margin:0}
@@ -163,6 +169,8 @@ section{padding:96px 24px}
 .skill-card h3{font-size:16px;font-weight:500;line-height:1.4;color:var(--text-heading);margin:0}
 .skill-card .tag-row{margin-top:0;padding-top:0}
 .skill-card .tag{background:var(--surface-card)}
+.skill-card--accent{border-color:var(--color-primary)}
+.tag--accent{background:var(--color-primary);color:var(--white)}
 
 /* cape pillars */
 .cape-intro{font-size:16px;line-height:1.55;color:var(--text-body);margin:0 0 48px;max-width:68ch}
@@ -241,9 +249,11 @@ section{padding:96px 24px}
   <div class="wrap">
     <a href="#top" class="brand">Crisler Chee</a>
     <nav class="nav-links">
+      <a href="#cape">Method</a>
+      <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
-      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
     <a href="#services" class="btn btn-primary btn-sm">Book a C.A.P.E. Audit</a>
@@ -255,8 +265,8 @@ section{padding:96px 24px}
     <div class="hero-copy">
       <span class="badge">Now booking AI Readiness Audits</span>
       <h1>Crisler Chee</h1>
-      <p class="hero-role">Frontend Lead, SU-PAY &amp; AI-Assisted Development Consultant</p>
-      <p class="hero-desc">Over 10 years shipping iOS and Android apps across payments, web3, fintech and games. Currently frontend lead for SU-PAY, a payment app in Japan, leading both the mobile and web teams. Based in Tokyo, JLPT N2 certified. I help teams adopt agent-assisted development without giving up the review discipline that keeps an app shippable.</p>
+      <p class="hero-role">AI Product &amp; Engineering Transformation Consultant</p>
+      <p class="hero-desc">10+ years shipping iOS and Android apps across payments, web3, fintech and games — currently Frontend Lead at SU-PAY, a payment app in Japan. I help engineering teams adopt AI-assisted development without giving up the review discipline that keeps an app shippable.</p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">See my work</a>
         <a href="#services" class="btn btn-secondary">Book a C.A.P.E. Audit</a>
@@ -270,157 +280,11 @@ section{padding:96px 24px}
       </div>
     </div>
   </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <div class="eyebrow">Selected work</div>
-    <h2 class="section-title">Work</h2>
-    <div class="card-grid">
-      <article class="case-card">
-        <div class="case-status"><span class="dot"></span>Live on the App Store</div>
-        <h3>Hanabi Finder</h3>
-        <p>A personal project mapping the major fireworks festivals (hanabi) across Japan.</p>
-        <div class="tag-row"><span class="tag">Swift</span><span class="tag">SwiftUI</span></div>
-        <a class="text-link" href="https://apps.apple.com/us/app/hanabi-finder-japan-fireworks/id6792519666">View on the App Store <span class="arrow">→</span></a>
-      </article>
-      <article class="case-card">
-        <div class="case-status"><span class="dot"></span>Aug 2022 – Mar 2025</div>
-        <h3>Nanameue — web3 &amp; NFT features</h3>
-        <p>Led a cross-functional team integrating web3 and NFT functionality into Nanameue's iOS apps.</p>
-        <div class="tag-row"><span class="tag">Swift</span><span class="tag">Web3</span><span class="tag">Team Lead</span></div>
-        <a class="text-link" href="#">View case study <span class="arrow">→</span></a>
-      </article>
-      <article class="case-card">
-        <div class="case-status"><span class="dot"></span>Feb 2019 – Dec 2020</div>
-        <h3>Liquid Lite — Quoine Corp</h3>
-        <p>Modernized the codebase and lifted user engagement from 30% to 70% in 6 months.</p>
-        <div class="tag-row"><span class="tag">Swift</span><span class="tag">GraphQL</span></div>
-        <a class="text-link" href="videos/liquid-lite.mp4">Watch a walkthrough <span class="arrow">→</span></a>
-      </article>
-      <article class="case-card">
-        <div class="case-status"><span class="dot"></span>Jul 2016 – Jan 2019</div>
-        <h3>Anytimes — redesign</h3>
-        <p>Helped redesign Anytimes, a peer-to-peer skill-sharing marketplace app.</p>
-        <div class="tag-row"><span class="tag">Swift</span><span class="tag">UI/UX</span></div>
-        <a class="text-link" href="videos/anytimes.mp4">Watch a walkthrough <span class="arrow">→</span></a>
-      </article>
-      <article class="case-card">
-        <div class="case-status"><span class="dot"></span>Nov 2015 – Jun 2016</div>
-        <h3>WealthPark</h3>
-        <p>Built the first iOS and Android versions of a building-management app for overseas owners of Japan property.</p>
-        <div class="tag-row"><span class="tag">Swift</span><span class="tag">Android</span></div>
-      </article>
-      <article class="case-card">
-        <div class="case-status"><span class="dot"></span>2011 · client work via Incent</div>
-        <h3>Godfisk</h3>
-        <p>A Norwegian recipe app, built as client work through Incent.</p>
-        <div class="tag-row"><span class="tag">iOS</span></div>
-        <a class="text-link" href="videos/godfisk.mp4">Watch a walkthrough <span class="arrow">→</span></a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="wrap">
-    <div class="eyebrow">Career</div>
-    <h2 class="section-title">Experience</h2>
-    <div class="experience-list">
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Frontend Lead</div>
-          <div class="exp-company">SU-PAY</div>
-          <div class="exp-detail">Leading both the mobile and web frontend teams for a payment app in Japan.</div>
-        </div>
-        <div class="exp-dates">Mar 2025 — Present</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Senior iOS Engineer, Team Lead</div>
-          <div class="exp-company">Nanameue</div>
-          <div class="exp-detail">Led a cross-functional team integrating web3 and NFT functionality into the iOS apps.</div>
-        </div>
-        <div class="exp-dates">Aug 2022 — Mar 2025</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Senior iOS Developer</div>
-          <div class="exp-company">B4f (Milleporte)</div>
-          <div class="exp-detail">Built the iOS app from scratch using GraphQL, working closely with designers on UX.</div>
-        </div>
-        <div class="exp-dates">Jan 2020 — Aug 2022</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Senior iOS Developer</div>
-          <div class="exp-company">Quoine Corp</div>
-          <div class="exp-detail">Maintained and shipped new features for Liquid Lite; lifted mobile activity from 20% to 70%+.</div>
-        </div>
-        <div class="exp-dates">Feb 2019 — Dec 2020</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">iOS Developer</div>
-          <div class="exp-company">Anytime Inc</div>
-          <div class="exp-detail">Helped redesign Anytimes, a skill-sharing marketplace app; introduced retrospectives and continuous integration.</div>
-        </div>
-        <div class="exp-dates">Jul 2016 — Jan 2019</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Mobile App Engineer</div>
-          <div class="exp-company">RJC Research (WealthPark)</div>
-          <div class="exp-detail">Developed, debugged and shipped the company's main iOS and Android product.</div>
-        </div>
-        <div class="exp-dates">Nov 2015 — Jun 2016</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Game Developer</div>
-          <div class="exp-company">Enish / Applibot / Gameloft Philippines</div>
-          <div class="exp-detail">Built 2D menus and gameplay for Unity3d and cocos2d titles; ported iPhone games to iPad and PSP.</div>
-        </div>
-        <div class="exp-dates">Jul 2013 — Jul 2015</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Co-founder / CTO</div>
-          <div class="exp-company">Spotcat Studio</div>
-          <div class="exp-detail">Built mobile apps and games for clients; mentored junior developers.</div>
-        </div>
-        <div class="exp-dates">Sep 2010 — Jul 2015</div>
-      </div>
-      <div class="exp-row">
-        <div class="exp-main">
-          <div class="exp-role">Lead iOS Developer</div>
-          <div class="exp-company">Incent</div>
-          <div class="exp-detail">Built apps from scratch for clients in Norway and Sweden.</div>
-        </div>
-        <div class="exp-dates">Jul 2011 — Mar 2013</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="skills" style="background:var(--cream-100)">
-  <div class="wrap">
-    <div class="eyebrow">Toolkit</div>
-    <h2 class="section-title">Skills</h2>
-    <div class="skill-grid">
-      <article class="skill-card">
-        <h3>Languages</h3>
-        <div class="tag-row"><span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">Objective-C</span><span class="tag">Java</span><span class="tag">Kotlin</span><span class="tag">C++</span><span class="tag">C#</span></div>
-      </article>
-      <article class="skill-card">
-        <h3>Tools</h3>
-        <div class="tag-row"><span class="tag">Xcode</span><span class="tag">Android Studio</span><span class="tag">Postman</span><span class="tag">Proxyman</span><span class="tag">Charles</span><span class="tag">Cursor</span><span class="tag">Firebase</span><span class="tag">Jenkins</span><span class="tag">Claude</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Gemini</span><span class="tag">GitHub Actions</span></div>
-      </article>
-      <article class="skill-card">
-        <h3>Other</h3>
-        <div class="tag-row"><span class="tag">Team Leadership</span><span class="tag">Technical Interviews</span><span class="tag">JLPT N2 Japanese</span></div>
-      </article>
-    </div>
+  <div class="wrap stat-strip">
+    <div class="stat-item"><span class="stat-value">10+ years</span><span class="stat-label">Engineering experience</span></div>
+    <div class="stat-item"><span class="stat-value">8 companies</span><span class="stat-label">3 countries</span></div>
+    <div class="stat-item"><span class="stat-value">30%→70%</span><span class="stat-label">Engagement lift, Liquid Lite</span></div>
+    <div class="stat-item"><span class="stat-value">JLPT N2</span><span class="stat-label">Japanese fluency</span></div>
   </div>
 </section>
 
@@ -512,6 +376,162 @@ section{padding:96px 24px}
         </ul>
         <span class="tier-price">¥1,000,000+ · 3–6 months (~$6,500+)</span>
         <div class="btn-wrap"><a href="#contact" class="btn btn-secondary btn-full">Discuss the program</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Selected work</div>
+    <h2 class="section-title">Work</h2>
+    <div class="card-grid">
+      <article class="case-card">
+        <div class="case-status"><span class="dot"></span>Live on the App Store</div>
+        <h3>Hanabi Finder</h3>
+        <p>A personal project mapping the major fireworks festivals (hanabi) across Japan.</p>
+        <div class="tag-row"><span class="tag">Swift</span><span class="tag">SwiftUI</span></div>
+        <a class="text-link" href="https://apps.apple.com/us/app/hanabi-finder-japan-fireworks/id6792519666">View on the App Store <span class="arrow">→</span></a>
+      </article>
+      <article class="case-card">
+        <div class="case-status"><span class="dot"></span>Aug 2022 – Mar 2025</div>
+        <h3>Nanameue — web3 &amp; NFT features</h3>
+        <p>Led a cross-functional team integrating web3 and NFT functionality into Nanameue's iOS apps.</p>
+        <div class="tag-row"><span class="tag">Swift</span><span class="tag">Web3</span><span class="tag">Team Lead</span></div>
+        <a class="text-link" href="#">View case study <span class="arrow">→</span></a>
+      </article>
+      <article class="case-card">
+        <div class="case-status"><span class="dot"></span>Feb 2019 – Dec 2020</div>
+        <h3>Liquid Lite — Quoine Corp</h3>
+        <p>Modernized the codebase and lifted user engagement from 30% to 70% in 6 months.</p>
+        <div class="tag-row"><span class="tag">Swift</span><span class="tag">GraphQL</span></div>
+        <a class="text-link" href="videos/liquid-lite.mp4">Watch a walkthrough (2 min) <span class="arrow">→</span></a>
+      </article>
+      <article class="case-card">
+        <div class="case-status"><span class="dot"></span>Jul 2016 – Jan 2019</div>
+        <h3>Anytimes — redesign</h3>
+        <p>Helped redesign Anytimes, a peer-to-peer skill-sharing marketplace app.</p>
+        <div class="tag-row"><span class="tag">Swift</span><span class="tag">UI/UX</span></div>
+        <a class="text-link" href="videos/anytimes.mp4">Watch a walkthrough (2 min) <span class="arrow">→</span></a>
+      </article>
+      <article class="case-card case-card--static">
+        <div class="case-status"><span class="dot"></span>Nov 2015 – Jun 2016</div>
+        <h3>WealthPark</h3>
+        <p>Built the first iOS and Android versions of a building-management app for overseas owners of Japan property.</p>
+        <div class="tag-row"><span class="tag">Swift</span><span class="tag">Android</span></div>
+      </article>
+      <article class="case-card">
+        <div class="case-status"><span class="dot"></span>2011 · client work via Incent</div>
+        <h3>Godfisk</h3>
+        <p>A Norwegian recipe app, built as client work through Incent.</p>
+        <div class="tag-row"><span class="tag">iOS</span></div>
+        <a class="text-link" href="videos/godfisk.mp4">Watch a walkthrough (20 sec) <span class="arrow">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow">Career</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-list">
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Frontend Lead</div>
+          <div class="exp-company">SU-PAY</div>
+          <div class="exp-detail">Leading both the mobile and web frontend teams for a payment app in Japan.</div>
+        </div>
+        <div class="exp-dates">Mar 2025 — Present</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Senior iOS Engineer, Team Lead</div>
+          <div class="exp-company">Nanameue</div>
+          <div class="exp-detail">Led a cross-functional team integrating web3 and NFT functionality into the iOS apps.</div>
+        </div>
+        <div class="exp-dates">Aug 2022 — Mar 2025</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Senior iOS Developer</div>
+          <div class="exp-company">B4f (Milleporte)</div>
+          <div class="exp-detail">Built the iOS app from scratch using GraphQL, working closely with designers on UX.</div>
+        </div>
+        <div class="exp-dates">Jan 2020 — Aug 2022</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Senior iOS Developer</div>
+          <div class="exp-company">Quoine Corp</div>
+          <div class="exp-detail">Maintained and shipped new features for Liquid Lite; lifted mobile activity from 20% to 70%+.</div>
+        </div>
+        <div class="exp-dates">Feb 2019 — Dec 2020</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">iOS Developer</div>
+          <div class="exp-company">Anytime Inc</div>
+          <div class="exp-detail">Helped redesign Anytimes, a skill-sharing marketplace app; introduced retrospectives and continuous integration.</div>
+        </div>
+        <div class="exp-dates">Jul 2016 — Jan 2019</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Mobile App Engineer</div>
+          <div class="exp-company">RJC Research (WealthPark)</div>
+          <div class="exp-detail">Developed, debugged and shipped the company's main iOS and Android product.</div>
+        </div>
+        <div class="exp-dates">Nov 2015 — Jun 2016</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Game Developer</div>
+          <div class="exp-company">Enish / Applibot / Gameloft Philippines</div>
+          <div class="exp-detail">Built 2D menus and gameplay for Unity3d and cocos2d titles; ported iPhone games to iPad and PSP.</div>
+        </div>
+        <div class="exp-dates">Jul 2013 — Jul 2015</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Co-founder / CTO</div>
+          <div class="exp-company">Spotcat Studio</div>
+          <div class="exp-detail">Built mobile apps and games for clients; mentored junior developers.</div>
+        </div>
+        <div class="exp-dates">Sep 2010 — Jul 2015</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-main">
+          <div class="exp-role">Lead iOS Developer</div>
+          <div class="exp-company">Incent</div>
+          <div class="exp-detail">Built apps from scratch for clients in Norway and Sweden.</div>
+        </div>
+        <div class="exp-dates">Jul 2011 — Mar 2013</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">Toolkit</div>
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-grid">
+      <article class="skill-card skill-card--accent">
+        <h3>AI Tools</h3>
+        <div class="tag-row"><span class="tag tag--accent">Claude</span><span class="tag tag--accent">Claude Code</span><span class="tag tag--accent">Cursor</span><span class="tag tag--accent">Codex</span><span class="tag tag--accent">Gemini</span></div>
+      </article>
+      <article class="skill-card">
+        <h3>Languages</h3>
+        <div class="tag-row"><span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">Objective-C</span><span class="tag">Java</span><span class="tag">Kotlin</span><span class="tag">C++</span><span class="tag">C#</span></div>
+      </article>
+      <article class="skill-card">
+        <h3>Tools</h3>
+        <div class="tag-row"><span class="tag">Xcode</span><span class="tag">Android Studio</span><span class="tag">Postman</span><span class="tag">Proxyman</span><span class="tag">Charles</span><span class="tag">Firebase</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span></div>
+      </article>
+      <article class="skill-card">
+        <h3>Other</h3>
+        <div class="tag-row"><span class="tag">Team Leadership</span><span class="tag">Technical Interviews</span><span class="tag">JLPT N2 Japanese</span></div>
       </article>
     </div>
   </div>
